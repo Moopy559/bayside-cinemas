@@ -1,37 +1,41 @@
-import SideNav from "./ui/SideNav";
+import Movies from "./ui/Movies";
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-        <p className="text-5xl">home</p>
-      </div>
-    </main>
+    <div>
+      <Movies />
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+      <p className="text-5xl">home</p>
+    </div>
   );
 }
