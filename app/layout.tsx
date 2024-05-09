@@ -24,12 +24,13 @@ export default function RootLayout({
           <div className="w-full flex-none md:w-64">
             <SideNav />
           </div>
-          <div className="w-full p-6 overflow-scroll">
+          <div className="w-full p-6 gap-y-8 flex flex-col overflow-scroll">
             <div className="flex gap-x-4 justify-between">
+              <div className="min-w-fit">SEARCH ICON</div>
               <Search />
               <LogIn />
             </div>
-            <div className="flex-grow p-6 md:p-12">{children}</div>
+            <div className="flex-grow">{children}</div>
           </div>
         </div>
       </body>

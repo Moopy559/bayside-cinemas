@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-pagination-color: #ff163c !important;
+  --swiper-pagination-bullet-inactive-color: grey !important;
+}
+
 * {
   /* outline: solid 1px red; */
 }
 
 body {
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }

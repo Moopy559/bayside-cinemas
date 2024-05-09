@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function SideNav() {
   return (
-    <div className="flex flex-col h-full bg-slate-600 sticky">
-      <ul>
+    <div className="h-full sticky p-6 uppercase">
+      <ul className="flex flex-col gap-y-6">
         <li>
           <Image
             src="/img/bayside-cinema.avif"
@@ -12,11 +12,23 @@ export default function SideNav() {
             height={50}
           />
         </li>
-        <li>Home</li>
-        <li>Coming Soon</li>
-        <li>Gift Cards</li>
-        <li>Premium Lounge</li>
-        <li>Bayside Cinemas</li>
+        <li className="flex gap-x-4">
+          <div>ICON</div>
+          <p>Home</p>
+        </li>
+        <li className="flex gap-x-4">
+          <div>ICON</div>
+          <p>Coming Soon</p>
+        </li>
+        <li className="flex gap-x-4">
+          <div>ICON</div>
+          <p>Gift Cards</p>
+        </li>
+        <li className="flex gap-x-4">
+          <div>ICON</div>
+          <p>Premium Lounge</p>
+        </li>
+
         <li>SEARCH ICON</li>
         <li>PROFILE ICON</li>
       </ul>
