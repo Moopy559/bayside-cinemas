@@ -27,7 +27,7 @@ export default function RootLayout({
           </div>
           <div className="w-full p-6 gap-y-8 flex flex-col overflow-scroll">
             <div className="flex gap-x-4 justify-between">
-              <Magnify width={30} />
+              <Magnify width={30} colour="#ff163c" />
               <Search />
               <LogIn />
             </div>

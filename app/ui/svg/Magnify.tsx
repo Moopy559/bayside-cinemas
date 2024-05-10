@@ -1,9 +1,15 @@
-export default function Magnify({ width = 20 }: { width?: number }) {
+export default function Magnify({
+  width = 20,
+  colour = "currentColor",
+}: {
+  width?: number;
+  colour?: string;
+}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill={colour}
       width={width}
     >
       <title>magnify</title>

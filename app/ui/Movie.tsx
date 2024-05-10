@@ -39,7 +39,7 @@ export default function Movie({
             width={300}
             height={300}
           />
-          <h3 className="mt-4">{title}</h3>
+          <h3 className="mt-4 text-secondary">{title}</h3>
         </div>
       )}
     </>
