@@ -18,6 +18,7 @@ const config: Config = {
       },
       textColor: {
         hotRed: "#ff163c",
+        secondary: "#a1a1aa",
       },
     },
   },

@@ -6,14 +6,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function Carousel({ children }: { children: React.ReactNode }) {
+export default function Carousel({
+  children,
+  slidesPerView = 1.5,
+  pagination = true,
+}: {
+  children: React.ReactNode;
+  slidesPerView?: number;
+  pagination?: boolean;
+}) {
   const childArray = React.Children.toArray(children);
   return (
     <Swiper
       spaceBetween={20}
-      slidesPerView={1.5}
+      slidesPerView={slidesPerView}
       modules={[Pagination]}
-      pagination
+      pagination={pagination}
     >
       {childArray.map((child, index) => {
         return (

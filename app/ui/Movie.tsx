@@ -3,16 +3,22 @@ import Image from "next/image";
 interface MovieProps {
   image: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
+  largeFormat: boolean;
 }
 
-export default function Movie({ image, title, subtitle }: MovieProps) {
+export default function Movie({
+  image,
+  title,
+  subtitle,
+  largeFormat,
+}: MovieProps) {
   return (
     <>
-      <div>
-        {/* <Image src={image} alt="title" width={1200} height={0} /> */}
+      {largeFormat ? (
+        // LARGE FORMAT
         <div
-          className="bg-no-repeat bg-cover h-[600px] flex justify-end flex-col rounded-md overflow-hidden"
+          className="bg-no-repeat bg-cover h-[600px] flex justify-end flex-col rounded-md overflow-hidden drop-shadow-sm"
           style={{ backgroundImage: `url(${image})` }}
         >
           <div className="bg-gradient-to-t from-black to-transparent p-12">
@@ -23,7 +29,19 @@ export default function Movie({ image, title, subtitle }: MovieProps) {
             </a>
           </div>
         </div>
-      </div>
+      ) : (
+        // SMALL FORMAT
+        <div>
+          <Image
+            src={image}
+            alt={title}
+            className="rounded-md"
+            width={300}
+            height={300}
+          />
+          <h3 className="mt-4">{title}</h3>
+        </div>
+      )}
     </>
   );
 }

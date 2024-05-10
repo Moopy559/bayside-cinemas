@@ -6,7 +6,7 @@ import Calendar from "./svg/Calendar";
 
 export default function SideNav() {
   return (
-    <div className="h-full sticky p-6 uppercase">
+    <div className="h-full sticky p-6 uppercase text-secondary">
       <ul className="flex flex-col gap-y-6">
         <li>
           <Image
