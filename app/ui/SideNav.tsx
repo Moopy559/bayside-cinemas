@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Film from "./svg/Film";
+import Gift from "./svg/Gift";
+import Star from "./svg/Star";
+import Calendar from "./svg/Calendar";
 
 export default function SideNav() {
   return (
@@ -13,24 +17,21 @@ export default function SideNav() {
           />
         </li>
         <li className="flex gap-x-4">
-          <div>ICON</div>
+          <Film />
           <p>Home</p>
         </li>
         <li className="flex gap-x-4">
-          <div>ICON</div>
+          <Calendar />
           <p>Coming Soon</p>
         </li>
         <li className="flex gap-x-4">
-          <div>ICON</div>
+          <Gift />
           <p>Gift Cards</p>
         </li>
         <li className="flex gap-x-4">
-          <div>ICON</div>
+          <Star />
           <p>Premium Lounge</p>
         </li>
-
-        <li>SEARCH ICON</li>
-        <li>PROFILE ICON</li>
       </ul>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Movie({ image, title, subtitle }: MovieProps) {
       <div>
         {/* <Image src={image} alt="title" width={1200} height={0} /> */}
         <div
-          className="bg-auto h-[600px] flex justify-end flex-col rounded-md overflow-hidden"
+          className="bg-no-repeat bg-cover h-[600px] flex justify-end flex-col rounded-md overflow-hidden"
           style={{ backgroundImage: `url(${image})` }}
         >
           <div className="bg-gradient-to-t from-black to-transparent p-12">

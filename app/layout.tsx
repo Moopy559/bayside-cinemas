@@ -4,6 +4,7 @@ import "./globals.css";
 import SideNav from "./ui/SideNav";
 import Search from "./ui/Search";
 import LogIn from "./ui/LogIn";
+import Magnify from "./ui/svg/Magnify";
 
 const kodeMono = Kode_Mono({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
           </div>
           <div className="w-full p-6 gap-y-8 flex flex-col overflow-scroll">
             <div className="flex gap-x-4 justify-between">
-              <div className="min-w-fit">SEARCH ICON</div>
+              <Magnify width={30} />
               <Search />
               <LogIn />
             </div>
